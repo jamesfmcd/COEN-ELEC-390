@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_board_pos">#66FFFFFF</color>
+    <color name="bg_board_pos_selected">#99b58900</color>
+    <color name="board_line_color">#FF000000</color>
+    <color name="board_piece">#FF000000</color>
+    <color name="board_pos_empty">#00000000</color><!-- Fully transparent - text is needed to ensure even columns -->
+    <color name="status">#FF000000</color>
+    <color name="status_player">@color/status</color>
+    <color name="status_player_turn">#FFcb4b16</color>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application strings -->
+    <string name="app_name">SensorTicTagToe</string>
+    <string name="game_player1">P1</string>
+    <string name="game_player2">P2</string>
+    <string name="game_player_x">X</string>
+    <string name="game_player_o">O</string>
+    <string name="score_zero">0</string>
+    <string name="menu_new_game">New Game…</string>
+    <string name="menu_reset_score">Reset Score</string>
+    
+    <string name="btn_new_game">New Game</string>
+    <string name="btn_cancel">Cancel</string>
+    
+    <!-- These items are the player modes displayed in the New Game screen. They have to match the
+    order of the mPlayerModes list in GameActivity. -->
+    <string-array name="player_modes">
+        <item>Human</item>
+        <item>t3h PeNgU1N oF d00m</item>
+    </string-array>
+    <string name="default_computer">random</string>
+    <string name="dialog_p1">Player 1</string>
+    <string name="dialog_p2">Player 2</string>
+</resources>
+

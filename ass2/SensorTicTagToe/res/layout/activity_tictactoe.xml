@@ -1,0 +1,259 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityLayout"
+    style="@style/bg_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="ca.concordia.sensortag.tictactoe.GameActivity" >
+
+    <!-- Game board -->
+
+    <LinearLayout
+        android:id="@+id/game_board"
+        style="@style/layout_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/status_bar"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="false" >
+
+        <!-- Row 1 -->
+
+        <LinearLayout
+            style="@style/layout_board_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333" >
+
+            <TextView
+                android:id="@+id/board_pos00"
+                style="@style/board_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="0.333"
+                android:text="@string/game_player_x" />
+
+            <!-- Vertical border -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/board_col_border" />
+
+            <TextView
+                android:id="@+id/board_pos01"
+                style="@style/board_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="0.333"
+                android:text="@string/game_player_x" />
+
+            <!-- Vertical border -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/board_col_border" />
+
+            <TextView
+                android:id="@+id/board_pos02"
+                style="@style/board_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="0.333"
+                android:text="@string/game_player_x" />
+        </LinearLayout>
+
+        <!-- Horizontal border -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/board_row_border" />
+
+        <!-- Row 2 -->
+
+        <LinearLayout
+            style="@style/layout_board_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333" >
+
+            <TextView
+                android:id="@+id/board_pos10"
+                style="@style/board_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="0.333"
+                android:text="@string/game_player_x" />
+
+            <!-- Vertical border -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/board_col_border" />
+
+            <TextView
+                android:id="@+id/board_pos11"
+                style="@style/board_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="0.333"
+                android:text="@string/game_player_x" />
+
+            <!-- Vertical border -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/board_col_border" />
+
+            <TextView
+                android:id="@+id/board_pos12"
+                style="@style/board_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="0.333"
+                android:text="@string/game_player_x" />
+        </LinearLayout>
+
+        <!-- Horizontal border -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/board_row_border" />
+
+        <!-- Row 3 -->
+
+        <LinearLayout
+            style="@style/layout_board_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333" >
+
+            <TextView
+                android:id="@+id/board_pos20"
+                style="@style/board_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="0.333"
+                android:text="@string/game_player_x" />
+
+            <!-- Vertical border -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/board_col_border" />
+
+            <TextView
+                android:id="@+id/board_pos21"
+                style="@style/board_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="0.333"
+                android:text="@string/game_player_x" />
+
+            <!-- Vertical border -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/board_col_border" />
+
+            <TextView
+                android:id="@+id/board_pos22"
+                style="@style/board_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="0.333"
+                android:text="@string/game_player_x" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/status_bar"
+        style="@style/layout_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/status_player1_label"
+            style="@style/status_player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/game_player1" />
+
+        <TextView
+            android:id="@+id/status_player1_piece"
+            style="@style/status_player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/status_player1_label"
+            android:layout_alignRight="@id/status_player1_label"
+            android:layout_below="@id/status_player1_label"
+            android:text="@string/game_player_x" />
+
+        <TextView
+            android:id="@+id/status_player1_score"
+            style="@style/status_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/status_player1_label"
+            android:text="@string/score_zero" />
+
+        <TextView
+            android:id="@+id/status_draw_score"
+            style="@style/status_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/score_zero" />
+
+        <TextView
+            android:id="@+id/status_player2_label"
+            style="@style/status_player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/game_player2" />
+
+        <TextView
+            android:id="@+id/status_player2_piece"
+            style="@style/status_player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/status_player2_label"
+            android:layout_alignRight="@id/status_player2_label"
+            android:layout_below="@id/status_player2_label"
+            android:text="@string/game_player_o" />
+
+        <TextView
+            android:id="@+id/status_player2_score"
+            style="@style/status_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/status_player2_label"
+            android:text="@string/score_zero" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

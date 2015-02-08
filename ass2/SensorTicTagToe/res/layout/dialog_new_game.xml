@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Switch
+        android:id="@+id/dialog_sw_p1_token"
+        style="@style/dialogElement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_p1"
+        android:textOff="@string/game_player_x"
+        android:textOn="@string/game_player_o" />
+
+    <Spinner
+        android:id="@+id/dialog_p1_mode"
+        style="@style/dialogElement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/dialogElement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/dialog_p2" />
+
+        <TextView
+            android:id="@+id/dialog_p2_token"
+            style="@style/dialogElement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/game_player_o" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/dialog_p2_mode"
+        style="@style/dialogElement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+</LinearLayout>

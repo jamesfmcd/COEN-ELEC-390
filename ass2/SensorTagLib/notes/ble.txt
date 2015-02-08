@@ -1,0 +1,37 @@
+https://developer.android.com/guide/topics/connectivity/bluetooth-le.html
+
+GATT/ATT
+
+Service --> Collection of Characteristics
+Characteristic --> Class/Struct containing Descriptors
+Descriptor --> Attributes to Characteristic w types
+
+
+Central vs peripheral --> Bluetooth connection
+GATT server/client --> separate from Central/peripheral, application protocol on top of Bluetooth
+
+<!-- Bluetooth: request/accept connections, transfer data -->
+<!-- Bluetooth_admin: initiate device discov, manip Bluetooth settings -->
+<uses-permission android:name="android.permission.BLUETOOTH"/>
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+// For Bluetooth LE
+// REQUIRE Bluetooth LE for the app - see required=true
+<uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+
+// If Bluetooth LE is not required:
+// Use this check to determine whether BLE is supported on the device. Then
+// you can selectively disable BLE-related features.
+if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
+    Toast.makeText(this, R.string.ble_not_supported, Toast.LENGTH_SHORT).show();
+    finish();
+}
+
+
+Android BLE issues
+The Android BLE stack is relatively new on the market and stability issues are frequently reported
+on various forums. If applications that use the BLE stack stop working, there are a few ways to get
+started again:
+
+* Restart the Bluetooth adapter by switching it off and on again
+* Clear the applications cache and data (this can be done from Settings->Apps)

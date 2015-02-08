@@ -1,0 +1,115 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="bg_container">
+        <item name="android:background">@drawable/bg_wood</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="layout_board">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">@dimen/board_padding</item>
+        <item name="android:paddingBottom">@dimen/board_padding</item>
+        <item name="android:paddingLeft">@dimen/board_padding</item>
+        <item name="android:paddingRight">@dimen/board_padding</item>
+    </style>
+
+    <style name="layout_board_row">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">@dimen/board_row_padding</item>
+        <item name="android:paddingBottom">@dimen/board_row_padding</item>
+        <item name="android:paddingLeft">@dimen/board_row_padding</item>
+        <item name="android:paddingRight">@dimen/board_row_padding</item>
+    </style>
+
+    <style name="layout_board_row_center">
+        <item name="android:background">@drawable/board_row_border</item>
+    </style>
+
+    <style name="board_pos">
+        <item name="android:background">@drawable/bg_board_pos</item>
+        <item name="android:paddingTop">@dimen/board_pos_padding_top</item>
+        <item name="android:paddingBottom">@dimen/board_pos_padding_bot</item>
+        <item name="android:paddingLeft">@dimen/board_pos_padding</item>
+        <item name="android:paddingRight">@dimen/board_pos_padding</item>
+        <item name="android:layout_marginTop">@dimen/board_pos_margin</item>
+        <item name="android:layout_marginBottom">@dimen/board_pos_margin</item>
+        <item name="android:layout_marginLeft">@dimen/board_pos_margin</item>
+        <item name="android:layout_marginRight">@dimen/board_pos_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/board_piece</item>
+    </style>
+    
+    <style name="board_pos_selected" parent="board_pos">
+        <item name="android:background">@drawable/bg_board_pos_selected</item>
+    </style>
+
+    <style name="layout_status">
+        <item name="android:background">@drawable/bg_board_pos</item>
+        <item name="android:layout_marginTop">@dimen/status_sep</item>
+    </style>
+
+    <style name="status_player">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/text_status</item>
+        <item name="android:textColor">@color/status</item>
+        <item name="android:paddingTop">@dimen/status_padding_top</item>
+        <item name="android:paddingBottom">@dimen/status_padding_bot</item>
+    </style>
+
+    <style name="status_player1" parent="status_player">
+        <item name="android:paddingLeft">@dimen/status_padding_outer</item>
+        <item name="android:paddingRight">@dimen/status_padding_inner</item>
+    </style>
+
+    <style name="status_player2" parent="status_player">
+        <item name="android:paddingLeft">@dimen/status_padding_inner</item>
+        <item name="android:paddingRight">@dimen/status_padding_outer</item>
+    </style>
+    
+    <style name="status_score" parent="status_player">
+        <item name="android:paddingLeft">@dimen/status_padding_inner</item>
+        <item name="android:paddingRight">@dimen/status_padding_inner</item>
+    </style>
+    
+    <style name="status_button" parent="@android:attr/buttonStyleSmall">
+        <item name="android:layout_marginTop">@dimen/button_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin_bot</item>
+        <item name="android:layout_marginLeft">@dimen/button_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/button_margin_right</item>
+        <item name="android:textSize">@dimen/text_button</item>
+    </style>
+    
+    <style name="dialogElement">
+        <item name="android:paddingTop">@dimen/dialog_padding_top</item>
+        <item name="android:paddingBottom">@dimen/dialog_padding_bot</item>
+        <item name="android:paddingLeft">@dimen/dialog_padding_left</item>
+        <item name="android:paddingRight">@dimen/dialog_padding_right</item>
+        <item name="android:textSize">@dimen/text_dialog</item>
+    </style>
+    
+    <style name="dialogSeparator">
+        <item name="android:layout_marginTop">@dimen/dialog_sep_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/dialog_sep_margin_bot</item>
+    </style>
+
+</resources>

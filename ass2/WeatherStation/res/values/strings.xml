@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application strings -->
+    <string name="app_name">Weather Station</string>
+    <string name="action_settings">Preferences</string>
+    <string name="temperature_title">Temperature</string>
+    <string name="barometer_title">Pressure</string>
+    <string name="humidity_title">Humidity</string>
+    <string name="temperature_c_unit">°C</string>
+    <string name="temperature_f_unit">°F</string>
+    <string name="barometer_kpa_unit">kPa</string>
+    <string name="barometer_mbar_unit">mBar</string>
+    <string name="barometer_inhg_unit">inHg</string>
+    <string name="humidity_unit">%</string>
+
+    <!-- Preference strings -->
+    <string name="pref_temp_unit">Temperature unit</string>
+    <string name="pref_baro_unit">Pressure unit</string>
+    <string name="Humidex">Humidex</string>
+    <string name="humidex_unit_on">On</string>
+    <string name="humidex_unit_off">Off</string>
+    <string name="show_temp">temp</string>
+    <string name="show_humidity">Humidity</string>
+    <string name="show_pressure">pressure</string>
+</resources>
+

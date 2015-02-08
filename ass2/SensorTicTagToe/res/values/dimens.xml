@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+    
+    <dimen name="board_padding">0dp</dimen>
+    <dimen name="board_row_padding">0dp</dimen>
+    <dimen name="board_pos_margin">6dp</dimen>
+    <dimen name="board_pos_padding">0dp</dimen>
+    <dimen name="board_pos_padding_top">0dp</dimen>
+    <dimen name="board_pos_padding_bot">0dp</dimen>
+    <dimen name="board_piece">72dp</dimen>
+    
+    <dimen name="status_sep">12dp</dimen>
+    <dimen name="text_status">32sp</dimen>
+    <dimen name="status_padding_top">3dp</dimen>
+    <dimen name="status_padding_bot">4dp</dimen>
+    <dimen name="status_padding_inner">8dp</dimen>
+    <dimen name="status_padding_outer">16dp</dimen>
+    
+    <dimen name="text_button">16sp</dimen>
+    <dimen name="button_height">40sp</dimen>
+    <dimen name="button_margin_top">0dp</dimen>
+    <dimen name="button_margin_bot">10dp</dimen>
+    <dimen name="button_margin_left">8dp</dimen>
+    <dimen name="button_margin_right">8dp</dimen>
+    
+    <dimen name="box_horizontal_spacing">4dp</dimen>
+    <dimen name="box_vert_inner_spacing">1dp</dimen>
+    <dimen name="box_vert_outer_spacing">4dp</dimen>
+    
+    <dimen name="text_datetime_size">12dp</dimen>
+    <dimen name="text_header_size">18dp</dimen>
+    <dimen name="text_temp_size">64dp</dimen>
+    <dimen name="text_temp_unit_size">48dp</dimen>
+    <dimen name="text_baro_size">32dp</dimen>
+    <dimen name="text_baro_unit_size">24dp</dimen>
+    <dimen name="text_humi_size">32dp</dimen>
+    <dimen name="text_humi_unit_size">24dp</dimen>
+    
+    <dimen name="text_padding_top">8dp</dimen>
+    <dimen name="text_padding_bot">16dp</dimen>
+    <dimen name="text_padding_inner">4dp</dimen>
+    <dimen name="text_padding_outer">16dp</dimen>
+    
+    <dimen name="text_padding_horizontal_header">12dp</dimen>
+    <dimen name="text_padding_top_header">8dp</dimen>
+    <dimen name="text_padding_bottom_header">6dp</dimen>
+    
+    <dimen name="dialog_padding_top">9dp</dimen>
+    <dimen name="dialog_padding_bot">12dp</dimen>
+    <dimen name="dialog_padding_left">12dp</dimen>
+    <dimen name="dialog_padding_right">12dp</dimen>
+    <dimen name="dialog_sep_margin_top">0dp</dimen>
+    <dimen name="dialog_sep_margin_bot">0dp</dimen>
+    <dimen name="text_dialog">18sp</dimen>
+    
+</resources>

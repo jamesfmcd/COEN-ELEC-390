@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Minimal</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="the_humidity_is">the humidity is: </string>
+    <string name="humidity">humidity!</string>
+    <string name="humidex_button">Humidex On/OFF</string>
+
+</resources>

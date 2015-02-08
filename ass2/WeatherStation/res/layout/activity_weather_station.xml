@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityLayout"
+    style="@style/bg_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="ca.concordia.sensortag.weather.WeatherStationActivity" >
+
+    <LinearLayout
+        android:id="@+id/boxContainer"
+        style="@style/box_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/header_temp"
+            style="@style/text_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/temperature_title" />
+
+        <LinearLayout
+            android:id="@+id/layout_temp"
+            style="@style/box_content"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_gravity="left|top"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/value_temp"
+                style="@style/text_temp_data"
+                android:layout_width="167dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:text="@string/show_temp" />
+
+            <TextView
+                android:id="@+id/unit_temp"
+                style="@style/text_temp_unit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="@string/temperature_c_unit" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/header_humi"
+            style="@style/text_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/humidity_title" />
+
+        <LinearLayout
+            android:id="@+id/layout_humi"
+            style="@style/box_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top" >
+
+            <TextView
+                android:id="@+id/value_humi"
+                style="@style/text_humi_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.36"
+                android:text="@string/show_humidity" />
+
+            <TextView
+                android:id="@+id/unit_humi"
+                style="@style/text_humi_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/humidity_unit" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/header_baro"
+            style="@style/text_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/barometer_title" />
+
+        <LinearLayout
+            android:id="@+id/layout_baro"
+            style="@style/box_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top" >
+
+            <TextView
+                android:id="@+id/value_baro"
+                style="@style/text_humi_data"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_weight="0.63"
+                android:text="@string/show_pressure" />
+
+            <TextView
+                android:id="@+id/unit_baro"
+                style="@style/text_humi_unit"
+                android:layout_width="92dp"
+                android:layout_height="53dp"
+                android:layout_weight="0.23"
+                android:text="@string/barometer_kpa_unit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_units"
+            style="@style/box_unit_switch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|top"
+            android:orientation="vertical" >
+
+            <Switch
+                android:id="@+id/temp_unit_switch"
+                style="@style/switch_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_temp_unit"
+                android:textOff="@string/temperature_c_unit"
+                android:textOn="@string/temperature_f_unit" />
+
+            <Switch
+                android:id="@+id/baro_unit_switch"
+                style="@style/switch_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_baro_unit"
+                android:textOff="@string/barometer_kpa_unit"
+                android:textOn="@string/barometer_inhg_unit" />
+
+            <Switch
+                android:id="@+id/humidex_unit_switch"
+                style="@style/switch_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Humidex" 
+                
+                android:textOff="@string/humidex_unit_off"
+                android:textOn="@string/humidex_unit_on" />
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

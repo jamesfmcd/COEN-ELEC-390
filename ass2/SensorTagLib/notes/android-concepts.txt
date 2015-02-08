@@ -1,0 +1,118 @@
+MINIMAL EXAMPLE:
+- Java:
+    - Classes, interfaces, abstract classes
+    - Inheritance (subclassing), method overriding, calling superclass methods
+    - Control structures: methods, conditionals, loops
+    - Primitive data types (int, boolean, float, double, long, etc.)
+    - Objects and complex types
+    - Variables, methods and specifiers (public/protected/private, static, etc.)
+    - "null" and null checking (compare to null pointers in C++ - except everything except primitive
+      data types is a reference/"pointer" in Java)
+    - Enums
+    - Casting and basics of polymorphism
+    - Creating new objects ("new" keyword, constructors)
+    - Anonymous classes
+- Observer (a.k.a. Listener) design pattern
+- Android Lifecycle
+- Android Toasts (bare basics - somewhat optional, you can introduce them in a different example)
+- Android IDs and how they associate to the layout (e.g. R.id.helloworld in this example)
+- Layout: how to obtain an element of the GUI in the Java code using findViewById()
+- Layout: How to modify the text displayed inside a TextView
+- Main thread vs. background threads (don't get into threading theory... just a hand-wave explanation)
+  and using runOnUiThread() to queue actions on the main thread
+    - makes use of an anonymous class that extends Runnable
+- (less important, more in DATA RECORD): How an "Intent" is used to start an Activity + the Extra data in an Intent.
+    - (They don't need to know how to start an activity/build an Intent yet, just understand the
+      purpose and data contained in an Intent - even then they don't need to understand that part
+      of the code yet. This will be important for the DATA RECORD example.)
+- XML and XML terminology (tag, attribute, etc.)
+- XML layouts - basics
+- ADVANCED EXAMPLES: SensorTagLib#initServices() can take up to 15 seconds, and
+  SensorTagLib#enableSensor can take 0.5 seconds maximum. What happens to the app on the
+  screen? Can you think of any way to make the app not freeze up during that time? Try implementing
+  a background thread for the SensorTagManager initialisation methods that take a lot of time.
+
+
+WEATHER STATION:
+- Java: switch statements
+- Java: nested classes, static vs. instance inner classes
+    - for instance inner class: how to access the instance ("this") object of the outer class
+        (i.e. if class InnerClass inside OuterClass, "this" refers to an InnerClass instance,
+        "OuterClass.this" refers to the containing OuterClass's instance)
+- Possible exercise: make the unit options persistent across app restarts
+- Exercise: Calculate and show humidex, dew point ... (any other values derived from weather data
+  that we have available? Idea would be to add/modify the layout and do a calculation on sensor data
+  for a new calculated value which can be shown on the GUI)
+- Layout: The "Switch" GUI element and how to manipulate it
+    - The OnCheckedChangedListener, and how to define a listener in order to run some code when
+      the user clicks on the switch
+- SensorTag:  period setting (how to check whether a sensor allows its period to be set, and how to
+  set it when you enable the sensor) --- note: period = how often a measurement is taken from the
+  sensor
+- Android Toasts (somewhat optional)
+- XML layouts
+    - Layout types: LinearLayout
+    - Styles: values/styles.xml
+    - Concept of "separation of content and presentation" (or structure and presentation):
+      the layout is structural, the styles are aesthetic
+    - Organization: using values/strings.xml, values/colors.xml, values/dimens.xml
+    - Drawables: shapes defined in XML (see bg_box.xml and bg_sky.xml)
+    - "keepScreenOn" attribute
+
+TIC TAC TOE:
+- Project suggested by Dr Kharma: change to create a different two-player board game based on a grid
+    e.g. Tic-Tac-Toe generalisations: https://en.wikipedia.org/wiki/M,n,k-game
+    e.g. Connect Four (special case of the above)
+    e.g. Reversi/"Othello"
+- Possible exercise: when button is held down, repeat button presses at a certain rate
+- Exercise: persist the current game and New Game dialog settings (if app closed and restarted,
+  restores the previous game + new game settings)
+- Exercise: Make your own, smarter Computer Player (AI)
+- Java:
+    - Arrays, multidimensional arrays (for the 2D game board - bare basics, just discussing it in
+      the code is enough)
+    - ArrayList - is like the C++ std::vector. (Doesn't need to be taught in detail, I think, just
+      seeing the example in the code when they add their custom AI - see exercise idea above - is
+      enough. Anyone who really needs it knows it exists and can look it up themselves.)
+    - Enums - used extensively to track player pieces (X, O), etc.
+    - Random - used for the random AI. Very simple, can be shown in two seconds.
+- Handlers
+    - Specifically how to use postDelayed() to run a function in the future (by default in the
+      main thread), and how to cancel all scheduled messages
+- Menu
+    - onCreateOptionsMenu
+    - onOptionsItemSelected
+    - XML
+- Spinners (dropdown menus) and Adapters
+    - see the constructor for NewGameDialogData
+    - An Adapter is what controls the contents of the dropdown menu
+    - For the style of the Adapter/dropdown menu, we don't define our own layout file for it but
+      simply use the basic, simple ones included in Android
+    - Adapters can sometimes dynamically change contents based on external factors (e.g. a
+      database or even just some piece of code that changes the list) - in this case we just use
+      a static (non-changing) string-array defined in values/string.xml
+    - Some of these ideas are explained inline in the code (is it clear enough?)
+- Android Dialogs - using the AlertDialog (simple, quick way to make dialogs)
+    - Using the "Builder" design pattern - used fairly frequently in Android
+- Setting text color, background drawables, etc. on a View in code
+- XML layouts
+    - Layout type: RelativeLayout, TableLayout, GridLayout, and how they act/differ
+    - Setting backgrounds to a drawable resource (image or drawable shape defined in XML)
+    - Drawables: images
+    - Drawables: XML <shape> (inner elements: <solid>, <corners>, <size>)
+    - Values: colors, string-array, + all the rest from before, styles, etc.
+    - Views: spinners (see layout/dialog_new_game.xml), image views (see layout/activity_tictactoe.xml)
+    - Menu: see menu/tictactoe.xml; aside from knowing the elements/structure (i.e. <menu> and
+      <item> elements), the main "special" thing is the android:showAsAction="ifRoom" attribute
+
+DATA RECORD:
+- Possible exercise: Make new app and change the data that's recorded: e.g. use the magnetometer,
+  make a tachometer (rotational speed detector) using a wheel with one or more evenly spaced magnets
+  on the edge
+
+TROUBLESHOOTING:
+- Restart SensorTAg
+- Restart app
+- Force Close app
+- Disable and re-enable Bluetooth
+- Restart phone

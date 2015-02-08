@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ca.concordia.sensortag.weather.WeatherStationActivity" >
+
+    <item
+        android:id="@+id/menu_new_game"
+        android:icon="@drawable/ic_menu_add"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_new_game"/>
+    <item
+        android:id="@+id/menu_reset_score"
+        android:icon="@drawable/ic_menu_revert"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_reset_score"/>
+
+</menu>
